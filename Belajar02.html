@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+            background: url('logo musafir.png') center/cover no-repeat; /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
+        }
+        
+        .login-container {
+            max-width: 300px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="marno" name="marno" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        function login() {
+            var username = document.getElementById("marno").value;
+            var password = document.getElementById("password").value;
+    
+            // Simpan data ke dalam variabel atau lakukan pengiriman data ke server di sini
+            // Contoh: localStorage.setItem("username", username);
+    
+            // Tampilkan pesan atau alihkan pengguna setelah login
+            alert("Login successful. Welcome, " + marno);
+            // Contoh: window.location.href = "dashboard.html";
+        }
+    </script>
+    
+    </body>
+    </html>
+    
